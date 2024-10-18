@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Swiftie Survey</title>
+</head>
+<body>
+  <h1 id="title"><strong>Swiftie Survey</strong></h1>
+  <p id="description">This survey is for the swifties, to gather information on the fan’s opinions!</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name
+       <input id="name" type="text" required placeholder=" Enter your name...">
+    </label>
+    <label class="question" for="email" id="email-label">Email
+       <input id="email" type="email" required placeholder=" Enter your email address...">
+    </label>
+    <label class="question" for="number" id="number-label">Age
+       <input id="number" type="number" min="7" max="111" required placeholder=" Enter your age in years......">
+    </label>
+    <label class="question" for="dropdown" id="dropdown-label">Which era is your favorite?
+    <select id="dropdown" type="select">
+      <option id="select-one" value="">(select one)</option>
+      <option value="1">Debut</option>
+      <option value="2">Beautiful Eyes (EP)</option>
+      <option value="3">Fearless</option>
+      <option value="4">Speak Now</option>
+      <option value="5">Red</option>
+      <option value="6">1989</option>
+      <option value="7">Reputation</option>
+      <option value="8">Lover</option>
+      <option value="9">Folklore</option>
+      <option value="10">Evermore</option>
+      <option value="11">Midnights</option>
+      <option value="12">TTPD</option>
+      <option value="13">Fearless (TV)</option>
+      <option value="14">Speak Now (TV)</option>
+      <option value="15">Red (TV)</option>
+      <option value="16">1989 (TV)</option>
+    </select>
+    </label>
+    <legend id="radio-label">Which would you rather listen to?</legend>
+    <p id="enter-1"></p>
+      <input type="radio" id="radio-1" name="radio" class="inline" value="1" checked>Taylor's Version</input>
+      <p id="enter-2"></p>
+      <input type="radio" id="radio-2" name="radio" class="inline" value="2">Stolen Version</input>
+    <legend id="checkbox-label">Which Era’s Tour outfit(s) are your favorite?</legend>
+      <label for="fearless">
+        <input type="checkbox" id="fearless" name="gold-fearless-dress" class="inline" value="Gold Fearless dress">Gold Fearless dress</input>
+      </label>
+      <label for="midnights">
+        <input type="checkbox" id="midnights" name="midnights-bodysuit" class="inline" value="Midnights bodysuit">Midnights bodysuit</input>
+      </label>
+      <label for="speak-now">
+        <input type="checkbox" id="speak-now" name="purple-speak-now-dress" class="inline" value="Purple Speak Now dress">Purple Speak Now dress</input>
+      </label>
+      <label for="lover-bodysuit">
+        <input type="checkbox" id="lover-bodysuit" name="pink-lover-bodysuit" class="inline" value="Pink Lover bodysuit">Pink Lover bodysuit</input>
+      </label>
+      <label for="reputation">
+        <input type="checkbox" id="reputation" name="reputation-bodysuit" class="inline" value="Reputation bodysuit">Reputation bodysuit</input>
+      </label>
+      <label for="folklore">
+        <input type="checkbox" id="folklore" name="white-folklore-dress" class="inline" value="White Folklore dress">White Folklore dress</input>
+      </label>
+      <label for="evermore">
+        <input type="checkbox" id="evermore" name="orange-evermore-dress" class="inline" value="Orange Evermore dress">Orange Evermore dress</input>
+      </label>
+      <label for="1989">
+        <input type="checkbox" id="1989" name="1989-set" class="inline" value="1989 set (any color variation)">1989 set (any color variation)</input>
+      </label>
+      <label for="ttpd">
+        <input type="checkbox" id="ttpd" name="white-ttpd-dress" class="inline" value="White TTPD dress">White TTPD dress</input>
+      </label>
+      <label for="red">
+        <input type="checkbox" id="red" name="red-sparkly-suit-jacket" class="inline" value="Red sparkly suit jacket">Red sparkly suit jacket</input>
+      </label>
+      <label for="karma">
+        <input type="checkbox" id="karma" name="purple-karma-fuzzy-jacket" class="inline" value="Purple Karma fuzzy jacket">Purple Karma fuzzy jacket</input>
+      </label>
+      <label for="lover-jacket">
+        <input type="checkbox" id="lover-jacket" name="lover-sparkly-suit-jacket" class="inline" value="Lover sparkly suit jacket">Lover sparkly suit jacket</input>
+      </label>
+      <label for="other">
+        <input type="checkbox" id="other" name="other" class="inline" value="Other (please specify below)">Other (please specify below)</input>
+      </label>
+      <label class="question" for="textarea">If you picked “other” on the last question,
+please specify which outfit(s):
+        <textarea class="question"id="textarea" name="comments" rows="3" col"30" placeholder=" Type your answer here..."></textarea>
+      </label> 
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+</body>
+</html>
